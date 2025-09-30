@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KonfigurasiController;
 use App\Http\Controllers\EthernetController;
@@ -40,3 +41,13 @@ Route::middleware(['auth'])->group(function () {
 });
 
 
+=======
+use App\Http\Controllers\AuthController;
+
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware('auth')->name('dashboard');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+>>>>>>> a7996714d1f20851bfcfe2cd4ae3c473456a1b6a

@@ -4,7 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<<<<<<< HEAD
         <title>Apa aja</title>
+=======
+        <title>Laravel</title>
+>>>>>>> a7996714d1f20851bfcfe2cd4ae3c473456a1b6a
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
